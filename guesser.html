@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="guesser.css" />
+    <title>Color Guesser</title>
+  </head>
+  <body>
+    <div class="txt">
+      <p>Guess the color:</p>
+    </div>
+    <div class="container">
+      <div class="field">
+        <label for="red">red: </label>
+        <input type="text" name="red" id="user_red" autofocus />
+      </div>
+      <div class="field">
+        <label for="green">green: </label>
+        <input type="text" name="green" id="user_green" />
+      </div>
+      <div class="field">
+        <label for="blue">blue: </label>
+        <input type="text" name="blue" id="user_blue" />
+      </div>
+      <div class="field">
+        <input type="submit" id="submit" />
+      </div>
+    </div>
+    <div class="container" id="results">
+      <div class="box" id="user-guess">
+        <p>Your guess</p>
+        <p id="result"></p>
+      </div>
+      <div class="box" id="actual">
+        <p>Actual color</p>
+        <p id="actual-rgb"></p>
+      </div>
+    </div>
+    <div id="errors">
+      <p id="red-error"></p>
+      <p id="green-error"></p>
+      <p id="blue-error"></p>
+      <p id="total-error"></p>
+      <p id="message"></p>
+    </div>
+    <div class="btn">
+      <button id="reset">New color</button>
+    </div>
+    <script src="guesser.js"></script>
+  </body>
+</html>
