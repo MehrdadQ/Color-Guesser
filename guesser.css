@@ -1,0 +1,103 @@
+:root {
+  --main-color: white;
+  --user-color: var(--main-color);
+}
+
+* {
+  transition: all 0.2s;
+}
+
+.txt {
+  font-family: sans-serif;
+  font-size: xx-large;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.box {
+  font-family: sans-serif;
+  font-size: xx-large;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  margin: 20px;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+
+label {
+  font-family: sans-serif;
+  font-size: large;
+  color: var(--main-color);
+  margin: 10px;
+}
+
+#errors {
+  color: var(--main-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 30px;
+  margin: 10px 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.field {
+  margin: 10px;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.btn {
+  transition: all 0.2s;
+  background-color: whitesmoke;
+  color: black;
+  border: 0px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 10px !important;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: rgb(102, 102, 102);
+  color: white;
+}
+
+#rgb-form {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 30px;
+  margin: 10px 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-txt-color {
+  color: var(--user-color);
+}
+
+#hint {
+  text-align: center;
+  color: var(--main-color);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+#hint:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
