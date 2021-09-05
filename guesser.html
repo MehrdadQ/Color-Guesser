@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="guesser.css" />
+    <link rel="icon" href="../images/guesser-logo.ico" />
+    <title>Color Guesser</title>
+  </head>
+  <body>
+    <div class="txt">
+      <p class="txt">Guess the RGB values:</p>
+    </div>
+    <form id="rgb-form">
+      <div class="field">
+        <label for="red">red: </label>
+        <input
+          required
+          type="number"
+          name="red"
+          id="user_red"
+          onchange="if(this.value>255){this.value='255';}else if(this.value<0){this.value='0';}"
+          autofocus
+        />
+      </div>
+      <div class="field">
+        <label for="green">green: </label>
+        <input
+          required
+          type="number"
+          name="green"
+          id="user_green"
+          onchange="if(this.value>255){this.value='255';}else if(this.value<0){this.value='0';}"
+        />
+      </div>
+      <div class="field">
+        <label for="blue">blue: </label>
+        <input
+          required
+          type="number"
+          name="blue"
+          id="user_blue"
+          onchange="if(this.value>255){this.value='255';}else if(this.value<0){this.value='0';}"
+        />
+      </div>
+      <input class="btn" type="submit" id="submit" />
+    </form>
+    <div class="container" id="results">
+      <div class="box" id="user-guess">
+        <p class="user-txt-color">Your guess</p>
+        <p class="user-txt-color" id="result"></p>
+      </div>
+      <div class="box" id="actual">
+        <p>Actual color</p>
+        <p id="actual-rgb"></p>
+      </div>
+    </div>
+    <div id="errors">
+      <p id="red-error"></p>
+      <p id="green-error"></p>
+      <p id="blue-error"></p>
+      <p id="total-error"></p>
+      <p id="message"></p>
+    </div>
+    <div class="btn-container">
+      <button class="btn" id="reset">New color</button>
+      <p id="hint">You can press the space bar for a new color</p>
+    </div>
+    <script src="guesser.js"></script>
+  </body>
+</html>
