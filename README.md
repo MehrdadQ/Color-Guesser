@@ -1,4 +1,4 @@
-# Color Guessing Game
+# [Color Guessing Game](https://mehrdadq.github.io/Color-Guesser/)
 
 User has to guess the RGB values of the randomly generated background color
 
