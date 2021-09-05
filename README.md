@@ -1,4 +1,5 @@
 # Color Guessing Game
+
 User has to guess the RGB values of the background color
 
 ![image](https://user-images.githubusercontent.com/85261795/132110286-30bdf29e-8a24-4570-b828-817dcaf392fe.png)
@@ -11,4 +12,5 @@ By clicking on the "New Color" button or pressing the Space Bar, a new backgroun
 
 
 Demo:
+![](Color_Guesser_Demo.gif)
 
